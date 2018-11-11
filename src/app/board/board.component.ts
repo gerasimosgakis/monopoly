@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoardComponent implements OnInit {
 
+  public squares = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.squares = [{}, {}, {}, {}, {}, {}, {}, {}, {}, ];
   }
 
 }

@@ -1,3 +1,36 @@
-<p>
-  board works!
-</p>
+<div class="main-board bordered">
+  <div class="free-parking bordered">
+    <div class="content">
+      <fa name="car" animation="fas fa-car"></fa>
+    </div>
+  </div>
+  <div *ngFor="let square of squares" class="common-square-top bordered">
+    <app-common-square></app-common-square>
+  </div>
+  <div class="gavel bordered">
+    <div class="content">
+      <fa name="gavel" animation="fas fa-gavel"></fa>
+    </div>
+  </div>
+  <div *ngFor="let square of squares" class="common-square-left bordered">
+    <div class="content">
+      <app-common-square></app-common-square>
+    </div>
+  </div>
+  <div class="center-square">
+    test
+  </div>
+  <div class="jail bordered">
+    <div class="content">
+      <fa name="jail" animation="fas fa-cog"></fa>
+    </div>
+  </div>
+  <div *ngFor="let square of squares" class="common-square-bottom bordered">
+    <app-common-square></app-common-square>
+  </div>
+  <div class="go bordered">
+    <div class="content">
+      <fa name="arrow" animation="fas fa-arrow-left"></fa>
+    </div>
+  </div>
+</div>

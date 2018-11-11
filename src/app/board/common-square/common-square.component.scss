@@ -1,0 +1,12 @@
+.main-square {
+    .content {
+        font-size: 0.5rem;
+        display: grid;
+        grid-template-rows: 3fr 4fr;
+        .top-square {
+            grid-row: 1 / span 1;
+            background: red;
+            height: 100%;
+        }
+    }
+}
